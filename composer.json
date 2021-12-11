@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "shawnveltman/laravel-package",
+    "description": "This is my package laravel-package",
     "keywords": [
-        ":vendor_name",
+        "shawnveltman",
         "laravel",
-        ":package_slug"
+        "laravel-package"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/shawnveltman/laravel-package",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Shawn Veltman",
+            "email": "shawn.veltman@gmail.com",
             "role": "Developer"
         }
     ],
@@ -21,6 +21,7 @@
         "illuminate/contracts": "^8.73"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.4",
         "nunomaduro/collision": "^5.10",
         "nunomaduro/larastan": "^1.0",
         "orchestra/testbench": "^6.22",
@@ -30,17 +31,18 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5",
+        "shawnveltman/phpcsfixer-helper": "dev-master",
         "spatie/laravel-ray": "^1.26"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Shawnveltman\\Example\\": "src",
+            "Shawnveltman\\Example\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Shawnveltman\\Example\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +56,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Shawnveltman\\Example\\ExampleServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Example": "Shawnveltman\\Example\\Facades\\Example"
             }
         }
     },
